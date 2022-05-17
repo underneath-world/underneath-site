@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Pentameter Regular;
+    src: url(fonts/Pentameter-Wide-Regular-Trial.woff);
+}
+
+@font-face {
+    font-family: Pentameter Light;
+    src: url(fonts/Pentameter-Wide-Light-Trial.woff);
+}
+
+.header-img{
+    width: 50%;
+    margin: auto;
+}
+
+body {
+    font-family: Pentameter Regular;
+    background-color: #f1f1f1;
+    color: #0000FF;
+}
+
+.everything {
+    max-width: 500px;
+    margin: 75px auto 50px;
+    position: relative;
+}
+
+.welcome {
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+}
+
+.filter-button{
+    display: flex;
+    justify-content: end;
+}
+
+.dropbtn {
+    font-family: Pentameter Regular;
+    color: #0000FF;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 255, .25);
+    font-size: 0.75em;
+    letter-spacing: 0.1px;
+    border-radius: 8px;
+    padding: 5px 7px;
+    transition: all ease 0.15s;
+    margin-bottom: 20px;
+
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    border: .75px solid rgba(255, 0, 255, 1);
+}
+
+.dropdown {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 0.75em;
+    position: absolute;
+    right: 0px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0000FF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    text-decoration: underline;
+}
+
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.index-list a {
+    font-family: Pentameter Light;
+    display: grid;
+    grid-template-columns: minmax(3em, 2fr) minmax(6em, 3fr) minmax(5em, 2fr) 1fr 1fr;
+    align-items: baseline;
+    column-gap: 1em;
+    padding: .5em 0em;
+    color: #0000FF;
+    font-size: smaller;
+}
+
+.index-list {
+    border-top: .75px solid rgba(0, 0, 255, .25);
+    margin-top: 2em;
+    line-height: inherit;
+}
+
+.index-list p{
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    padding: 0%;
+}
+
+a:visited{
+    color: #0000FF;
+}
+
+p {
+    margin: 0%;
+}
+
+ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.accordion_container {
+    max-width: 500px;
+    border-bottom: 1px solid rgba(0, 0, 255, .25) !important;
+}
+
+.accordion_head {
+    color: #0000FF;
+    cursor: pointer;
+    margin: 0%;
+}
+
+.accordion_head a:hover {
+    background-color: #0000FF;
+    color: #f1f1f1;
+}
+
+.accordion_body {
+    font-family: Pentameter Light;
+    border-top: .75px solid rgba(0, 0, 255, .25);
+    padding-bottom: 20px;
+}
+
+.accordion_body p {
+    padding: 18px 5px;
+    margin: 0px;
+    font-size: small;
+}
+
+a.button{
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 255, .25) !important;
+    font-size: 0.75em;
+    letter-spacing: 0.1px;
+    border-radius: 8px;
+    padding: 5px 7px;
+    transition: all ease 0.15s;
+    margin-bottom: 3px;
+}
+
+a.button:hover{
+    border: .75px solid rgba(255, 0, 255, 1) !important;
+    font-size: 0.75em;
+}
