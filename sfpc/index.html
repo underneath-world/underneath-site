@@ -17,7 +17,7 @@
             background-color: #000;
             font-family: 'Courier';
             color: #FFF;
-            font-size: 12pt;
+            font-size: 8pt;
             line-height: 10pt;
             cursor: none;
         }
@@ -41,7 +41,7 @@
         #one {
             position: absolute;
             top: 100px;
-            left: 200px;
+            left: 125px;
         }
 
         #two {
@@ -84,9 +84,10 @@
 
 </body>
 <script>
-    // const density = "🌿🌿🌿🌿🌿💧💧💧💧💧💧💌💌💌💌💌🕊🕊🕊🕊🕊🕊🕊🕊🕊                  ";
-    // const density = '       .:-i|=+%O#@'
-    const density = '   🕊     .:░▒▓💧🌿💌';
+
+    // const density = '        .:░▒▓💧&#127807;💌';
+
+    const density = ['&#127807;',  '&#128167','&#128140;', '&#128140;', '&#128330;']
 
     let video;
     let asciiDiv;
@@ -109,10 +110,11 @@
                 const b = video.pixels[pixelIndex + 2];
                 const avg = (r + g + b) / 3;
                 const len = density.length;
-                const charIndex = floor(map(avg, 0, 255, 0, len));
-                const c = density.charAt(charIndex);
+                const charIndex = floor(map(avg, 0, 255, 0, len-1));
+                const c = density[charIndex];
                 if (c == " ") asciiImage += "&nbsp;";
                 else asciiImage += c;
+
             }
             asciiImage += '<br/>';
         }
