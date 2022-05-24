@@ -22,6 +22,8 @@ function newConnection(socket){
         //io.sockets.emit('mouse',data);
         console.log(data);
     }
+    
+    socket.on('disconnect', () => console.log('Client disconnected'));
 }
 
 console.log("socket server is running")
