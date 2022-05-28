@@ -7,7 +7,7 @@ function setup(){
     socket = io.connect('http://localhost:3000');
     // socket = io.connect('https://damp-stream-62424.herokuapp.com/');
 =======
-    socket = io.connect('http://localhost:80');
+    socket = io.connect('http://localhost:3000');
 >>>>>>> Stashed changes
     socket.on('mouse', newDrawing);
 }
