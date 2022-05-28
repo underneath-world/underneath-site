@@ -3,8 +3,12 @@ var socket;
 function setup(){
     createCanvas(200,200)
     background(0);
+<<<<<<< Updated upstream
     socket = io.connect('http://localhost:3000');
     // socket = io.connect('https://damp-stream-62424.herokuapp.com/');
+=======
+    socket = io.connect('http://localhost:80');
+>>>>>>> Stashed changes
     socket.on('mouse', newDrawing);
 }
 
