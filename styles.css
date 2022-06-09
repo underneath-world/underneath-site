@@ -1,38 +1,61 @@
 @font-face {
-    font-family: Pentameter Regular;
+    font-family: 'Pentameter Regular';
     src: url(fonts/Pentameter-Wide-Regular-Trial.woff);
 }
 
 @font-face {
-    font-family: Pentameter Light;
+    font-family: 'Pentameter Light';
     src: url(fonts/Pentameter-Wide-Light-Trial.woff);
 }
 
-.header-img{
-    width: 50%;
-    margin: auto;
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(fonts/HelveticaNeue-Light.woff);
+    src: url(fonts/HelveticaNeue-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(fonts/HelveticaNeue-Bold.woff);
+    src: url(fonts/HelveticaNeue-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(fonts/HelveticaNeue-Medium.woff);
+    src: url(fonts/HelveticaNeue-Medium.woff2);
+}
+
+
+.header-img {
+}
+
+.eyeflower{
+    width: 80%;
 }
 
 body {
-    font-family: Pentameter Regular;
+    font-family: 'Helvetica Neue Light';
     background-color: #f1f1f1;
     color: #0000FF;
+    width: 75%;
+    margin: auto;
 }
 
-.everything {
-    max-width: 500px;
-    margin: 75px auto 50px;
-    position: relative;
-}
+.everything {}
 
 .welcome {
+    padding-top: 100px;
+    display: flex;
 }
 
 .welcome h1 {
-    font-size: 2.5em;
+    font-family: 'Pentameter Regular';
+    font-size: 4.25rem;
+    margin: 0;
 }
 
-.filter-button{
+.filter-button {
     display: flex;
     justify-content: end;
 }
@@ -95,14 +118,13 @@ body {
 
 
 .index-list a {
-    font-family: Pentameter Light;
+    font-family: 'Helvetica Neue Light';
     display: grid;
-    grid-template-columns: minmax(3em, 2fr) minmax(6em, 3fr) minmax(5em, 2fr) 1fr 1fr;
+    grid-template-columns: minmax(4em, 4fr) minmax(7em, 3fr) minmax(3em, 1fr) 1fr;
     align-items: baseline;
-    column-gap: 1em;
-    padding: .5em 0em;
+    column-gap: 1.5em;
     color: #0000FF;
-    font-size: smaller;
+    font-size: 1.5rem;
 }
 
 .index-list {
@@ -111,16 +133,14 @@ body {
     line-height: inherit;
 }
 
-.index-list p{
-    font-size: small;
-}
+.index-list p {}
 
 a {
     text-decoration: none;
     padding: 0%;
 }
 
-a:visited{
+a:visited {
     color: #0000FF;
 }
 
@@ -135,7 +155,6 @@ ul {
 }
 
 .accordion_container {
-    max-width: 500px;
     border-bottom: 1px solid rgba(0, 0, 255, .25) !important;
 }
 
@@ -151,7 +170,6 @@ ul {
 }
 
 .accordion_body {
-    font-family: Pentameter Light;
     border-top: .75px solid rgba(0, 0, 255, .25);
     padding-bottom: 20px;
 }
@@ -159,10 +177,10 @@ ul {
 .accordion_body p {
     padding: 18px 5px;
     margin: 0px;
-    font-size: small;
+    font-size: 1.25rem;
 }
 
-a.button{
+a.button {
     display: inline-block;
     border: 1px solid rgba(0, 0, 255, .25) !important;
     font-size: 0.75em;
@@ -171,9 +189,68 @@ a.button{
     padding: 5px 7px;
     transition: all ease 0.15s;
     margin-bottom: 3px;
+    font-size: 1.25rem;
 }
 
-a.button:hover{
+a.button:hover {
     border: .75px solid rgba(255, 0, 255, 1) !important;
-    font-size: 0.75em;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .eyeflower{
+        width: 40%;
+        padding-bottom: 30px;
+    }
+
+    .welcome{
+        padding-top: 50px;
+        display: block;
+    }
+
+    .welcome h1 {
+        font-family: 'Pentameter Regular';
+        font-size: 3rem;
+        margin: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .eyeflower{
+        width: 100%;
+    }
+
+    .index-list a {
+        font-size: 1rem;
+    }
+
+    .accordion_body p {
+        font-size: 1rem;
+    }
+
+    a.button {
+        font-size: 1rem;
+    }
+
+    .header-img{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    body {
+        width: 90%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .welcome{
+        display: block;
+    }
+
+    .welcome h1 {
+        font-size: 2rem;
+    }
 }

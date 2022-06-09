@@ -33,7 +33,7 @@ function newConnection(socket) {
         user: user
     });
     console.log('new connection: ' + socket.id);
-    console.log('there are ' + users.length + ' users in this moment');
+    console.log('there are ' + users.length + ' lovers in this moment');
 
     socket.emit("users", users);
     console.log(users);
@@ -55,13 +55,6 @@ function newConnection(socket) {
 
     function momentMsg(thisMoment){
         socket.broadcast.emit('moment', thisMoment);
-
-        iAm.value() = "";
-        youAre.value() = "";
-        feelingInMyChest.value() = "";
-        whatISmell.value()= "";
-        youAreToMe.value() = "";
-
     }
 
     receiver = users[0].userID;
