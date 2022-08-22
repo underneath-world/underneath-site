@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Pentameter Regular';
+    src: url(../fonts/Pentameter-Wide-Regular-Trial.woff);
+}
+
+@font-face {
+    font-family: 'Pentameter Light';
+    src: url(../fonts/Pentameter-Wide-Light-Trial.woff);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(../fonts/HelveticaNeue-Light.woff);
+    src: url(../fonts/HelveticaNeue-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(../fonts/HelveticaNeue-Bold.woff);
+    src: url(../fonts/HelveticaNeue-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(../fonts/HelveticaNeue-Medium.woff);
+    src: url(../fonts/HelveticaNeue-Medium.woff2);
+}
+
+body {
+    font-family: 'Helvetica Neue Light';
+    background-color: #f1f1f1;
+    color: #0000FF;
+    width: 75%;
+    margin: auto;
+}
+
+h1{
+    font-family:'Pentameter Regular';
+    font-size: 4rem;
+}
+
+h2{
+    font-family:'Pentameter Light';
+}
+
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1.15rem;
+    }
+}
