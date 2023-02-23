@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url(fonts/HelveticaNeue-Light.woff);
+    src: url(fonts/HelveticaNeue-Light.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url(fonts/HelveticaNeue-Bold.woff);
+    src: url(fonts/HelveticaNeue-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(fonts/HelveticaNeue-Medium.woff);
+    src: url(fonts/HelveticaNeue-Medium.woff2);
+}
+
+#iloveyou {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: Helvetica Neue Light;
+}
