@@ -6,10 +6,9 @@ let img1, img2, img3, img4;
 
 let counter = 0;
 
-function preload() {
-    soundFormats('mp3', 'ogg', 'wav');
-    mySound = loadSound('nightingales.wav');
-}
+var audio = document.getElementById("myAudio");
+audio.autoplay=true;
+audio.loop = true;
 
 function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
@@ -26,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-    mySound.loop();
+
 }
 
 function mouseClicked() {

@@ -43,6 +43,10 @@ img{
     font-size: 14px;
 }
 
+audio{
+    display: none;
+}
+
 ::selection {
     background-color: #000000;
 }
