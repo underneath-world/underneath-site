@@ -29,11 +29,18 @@
 body {
     font-family: 'Helvetica Neue Light';
     background-color: #f1f1f1;
-    color: #0000FF;
+    color: black;
     width: 50%;
     margin: auto;
-    font-size: 1.5rem;
     padding: 200px 0px;
+}
+
+p{
+    line-height: 2rem;
+}
+
+a{
+    color: black;
 }
 
 h1{
@@ -43,6 +50,7 @@ h1{
 
 h2{
     font-family:'Pentameter Light';
+    margin: 50px 0px;
 }
 
 ul{
@@ -63,7 +71,11 @@ li{
 }
 
 a:visited{
-    color: #0000FF;
+    color: black;
+}
+
+img{
+    margin: 50px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 600px){
