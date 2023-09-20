@@ -30,7 +30,7 @@ body {
     font-family: 'Helvetica Neue Light';
     background-color: #f1f1f1;
     color: black;
-    width: 50%;
+    width: 700px;
     margin: auto;
     padding: 200px 0px;
 }
@@ -45,7 +45,7 @@ a{
 
 h1{
     font-family:'Pentameter Regular';
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2{
@@ -75,7 +75,7 @@ a:visited{
 }
 
 img{
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0px 0px;
 }
 
 @media only screen and (max-width: 600px){
