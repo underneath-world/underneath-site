@@ -27,13 +27,6 @@
 }
 
 
-.header-img {
-}
-
-.eyeflower{
-    width: 80%;
-}
-
 body {
     font-family: 'Helvetica Neue Light';
     background-color: #f1f1f1;
@@ -236,7 +229,7 @@ a.button:hover {
     }
 
     body {
-        width: 450px;
+        width: 80%;
         margin: auto;
         font-size: 1rem;
     }
