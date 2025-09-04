@@ -88,6 +88,32 @@ for (var i = 0; i < btns.length; i++) {
         $(this).children(".plusminus").text('-');
       }
     });
+
+    // Show black box on hover over projects
+    $(".accordion_head").hover(
+      function() {
+        // Generate random position
+        const maxX = window.innerWidth - 300; // 300 is the width of the box
+        const maxY = window.innerHeight - 300; // 300 is the height of the box
+        const randomX = Math.floor(Math.random() * Math.max(0, maxX));
+        const randomY = Math.floor(Math.random() * Math.max(0, maxY));
+        
+        $(".hover-image-container").css({
+          'opacity': '1',
+          'visibility': 'visible',
+          'top': randomY + 'px',
+          'left': randomX + 'px',
+          'right': 'auto',
+          'transform': 'none'
+        });
+      },
+      function() {
+        $(".hover-image-container").css({
+          'opacity': '0',
+          'visibility': 'hidden'
+        });
+      }
+    );
   });
   
 
